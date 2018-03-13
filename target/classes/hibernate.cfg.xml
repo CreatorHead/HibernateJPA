@@ -1,0 +1,59 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/hibernate_db</property>
+		<property name="connnection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="org.hibernate.dialect.MySQLDialect"></property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<!-- <property name="hbm2ddl.auto">update</property> -->
+		<mapping class="advance.entities.Student" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- <mapping class="com.test.entities.entity_basic_types.Movie_BasicValueType"/> 
+			<mapping class="com.test.entities.entity_basic_types.Student_CollectionBasicValueType"/> 
+			<mapping class="com.test.entities.entity_basic_types.Office_CollectionValueType"/> 
+			<mapping class="com.test.entities.associations.one_to_one.Person_OneToOneUnidirectional"/> 
+			<mapping class="com.test.entities.associations.one_to_one.Address"/> <mapping 
+			class="com.test.entities.associations.one_to_one.User_OneToOneBidirectional"/> 
+			<mapping class="com.test.entities.associations.one_to_one.VoterCard"/> <mapping 
+			class="com.test.new_annotations.TransientTest"/> <mapping class="com.test.entities.associations.one_to_many.PencilBox_UniDirectional"/> 
+			<mapping class="com.test.entities.associations.one_to_many.Pencil"/> <mapping 
+			class="com.test.entities.entity_basic_types.Person_CollectionValueType"/> 
+			<mapping class="com.test.entities.entity_basic_types.Employee_CompositeValueType"/> 
+			<mapping class="com.test.entities.associations.one_to_many.Bucket_Bidirectional"/> 
+			<mapping class="com.test.entities.associations.one_to_many.IceCube"/> <mapping 
+			class="com.test.entities.entity_basic_types.User_CollectionMapValueType"/> 
+			<mapping class="com.test.new_annotations.TemporalTest"/> <mapping class="com.test.new_annotations.FormulaTest"/> 
+			<mapping class="com.test.entities.associations.one_to_many.Teenager_JoinTable"/> 
+			<mapping class="com.test.entities.associations.one_to_many.Smartphone"/> 
+			<mapping class="com.test.entities.associations.many_to_many.Students_Unidirectional"/> 
+			<mapping class="com.test.entities.associations.many_to_many.Teacher"/> <mapping 
+			class="com.test.entities.associations.many_to_many.Students_Bidirectional"/> 
+			<mapping class="com.test.entities.associations.many_to_many.Teacher_Bidirectional"/> 
+			<mapping class="crud.Pen"/> <mapping class="crud.Pen"/> <mapping class="advance.entities.Currency"/> 
+			<mapping class="advance.entities.Market"/> <mapping class="advance.entities.Account"/> 
+			<mapping class="advance.entities.Cat"/> <mapping class="advance.entities.Dog"/> 
+			<mapping class="advance.entities.RegularEmployee"/> <mapping class="advance.entities.ContractEmployee"/> 
+			<mapping class="advance.entities.Employee"/> <mapping class="advance.entities.Shape"/> 
+			<mapping class="advance.entities.Rectangle"/> <mapping class="advance.entities.Circle"/> 
+			<mapping class="advance.entities.Student"/> <mapping class="advance.entities.Emp"/> -->
+	</session-factory>
+</hibernate-configuration>
